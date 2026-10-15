@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>L.A Beauty — Institut de beauté à Cotonou</title>
+  <meta name="description" content="L.A Beauty, institut de beauté à Cotonou spécialisé dans les soins du visage : hyperpigmentation, acné, éclat naturel de la peau.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="logo" aria-label="L.A Beauty — Accueil">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+          <circle cx="50" cy="50" r="50" fill="#0e0e0e"/>
+          <g fill="none" stroke="#c99a3e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M31 27 V57 H46"/>
+            <path d="M44 57 L58 27 L72 57"/>
+            <path d="M50 49 H66"/>
+          </g>
+          <text x="50" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" letter-spacing="1.1" fill="#d9ab55">L.A BEAUTY</text>
+        </svg>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#accueil" class="nav__link is-active">Accueil</a>
+        <a href="#soins" class="nav__link">Nos soins</a>
+        <a href="#apropos" class="nav__link">À propos</a>
+        <a href="#galerie" class="nav__link">Galerie</a>
+        <a href="#contact" class="nav__link">Contact</a>
+        <a href="#contact" class="btn btn--outline nav__cta-mobile">Prendre rendez-vous</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--outline header__cta">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 14h2M12 14h2M16 14h.01M8 17h2M12 17h2"/></svg>
+        Prendre rendez-vous
+      </a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="accueil">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Votre institut de beauté à Cotonou</p>
+          <h1 class="hero__title">Révélez l’éclat naturel<br>de votre <em>peau.</em></h1>
+          <p class="hero__text">
+            Spécialisé dans les soins du visage, nous vous accompagnons dans la lutte contre l’hyperpigmentation et l’acné, pour une peau saine, propre et éclatante. L.A Beauty, c’est aussi une expérience de beauté et de bien-être, pensée pour vous.
+          </p>
+          <div class="hero__actions">
+            <a href="#soins" class="btn btn--dark">
+              Découvrir nos soins
+              <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#contact" class="link-underline">Prendre rendez-vous</a>
+          </div>
+          <p class="hero__tagline">Expertise <span>•</span> Douceur <span>•</span> Résultats</p>
+        </div>
+
+        <div class="hero__visual">
+          <img src="images/hero.jpg" alt="Femme au teint lumineux, serviette blanche sur les cheveux, main posée sur le visage" width="791" height="474">
+          <div class="badge">
+            <svg class="icon icon--star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.5l6-.8z"/></svg>
+            <span>Votre peau mérite<br>le meilleur</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ATOUTS ============ -->
+    <section class="features" aria-label="Nos engagements">
+      <div class="container features__inner">
+        <div class="feature">
+          <span class="feature__icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="21" r="8.5"/><path d="M15.5 19c1-6 5-9.5 9.5-9.5S33 13 33.5 19c-2.5-.6-5-2.6-6-5-1.8 2.8-6.5 4.800-12 5z"/><path d="M13.500 38c1-6 5.500-8 10.500-8s9.500 2 10.500 8"/><path d="M21 28.500l3 3 3-3"/></svg>
+          </span>
+          <div>
+            <h3>Soins personnalisés</h3>
+            <p>Chaque peau est unique, chaque soin est sur mesure.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 33c-4-3-6.500-7-6.500-12 3 1 5 3 6.500 6 1.500-3 3.500-5 6.500-6 0 5-2.500 9-6.500 12z"/><path d="M24 27c-1.500-5-1.500-10 0-15 1.500 5 1.500 10 0 15z"/><path d="M13 27c-3 0-5.500-1.500-7-4 3.500-.5 6 .5 8 2.500M35 27c3 0 5.500-1.500 7-4-3.500-.5-6 .5-8 2.500"/><path d="M12 34c4 4 8 6 12 6s8-2 12-6"/></svg>
+          </span>
+          <div>
+            <h3>Beauté &amp; bien-être</h3>
+            <p>Prenez soin de votre peau, mais aussi de votre esprit.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature__icon">
+            <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 7l14 5v10c0 9.500-5.800 16-14 19-8.200-3-14-9.500-14-19V12z"/><path d="M17.500 24l4.800 4.800L31 20"/></svg>
+          </span>
+          <div>
+            <h3>Une approche experte</h3>
+            <p>Des soins de qualité, réalisés par des professionnelles qualifiées.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOS SOINS ============ -->
+    <section class="soins" id="soins">
+      <div class="container">
+        <header class="soins__head">
+          <div>
+            <p class="eyebrow"><span class="eyebrow__line"></span>Nos soins signature</p>
+            <h2 class="soins__title">Des soins ciblés, des résultats visibles</h2>
+          </div>
+          <p class="soins__intro">Découvrez nos soins du visage spécialement conçus pour traiter l’hyperpigmentation, l’acné et révéler l’éclat naturel de votre peau.</p>
+        </header>
+
+        <div class="cards">
+          <a href="#contact" class="card reveal">
+            <div class="card__img"><img src="images/soin-1.jpg" alt="Soin anti-imperfections du visage" loading="lazy"></div>
+            <div class="card__body">
+              <span class="card__line"></span>
+              <div class="card__row">
+                <h3>Soin anti-imperfections</h3>
+                <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+              </div>
+              <p>Purifie, équilibre et réduit les imperfections.</p>
+            </div>
+          </a>
+
+          <a href="#contact" class="card reveal">
+            <div class="card__img"><img src="images/soin-2.jpg" alt="Soin éclat et uniformité du teint" loading="lazy"></div>
+            <div class="card__body">
+              <span class="card__line"></span>
+              <div class="card__row">
+                <h3>Éclat &amp; uniformité</h3>
+                <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+              </div>
+              <p>Atténue l’hyperpigmentation et unifie le teint.</p>
+            </div>
+          </a>
+
+          <a href="#contact" class="card reveal">
+            <div class="card__img"><img src="images/soin-3.jpg" alt="Rituel bien-être pour le visage" loading="lazy"></div>
+            <div class="card__body">
+              <span class="card__line"></span>
+              <div class="card__row">
+                <h3>Rituel bien-être</h3>
+                <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+              </div>
+              <p>Détend, hydrate et sublime votre peau.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ============ À PROPOS ============ -->
+    <section class="about" id="apropos">
+      <div class="container about__inner">
+        <div class="about__visual reveal">
+          <span class="about__frame" aria-hidden="true"></span>
+          <div class="about__arch">
+            <img src="images/apropos.jpg" alt="Cliente au teint lumineux, serviette blanche sur les cheveux" loading="lazy">
+          </div>
+          <div class="about__chip">
+            <svg class="icon icon--star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L3.4 9.5l6-.8z"/></svg>
+            <div><strong>4,4 / 5</strong><span>41 avis Google</span></div>
+          </div>
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow"><span class="eyebrow__line"></span>À propos</p>
+          <h2 class="about__title">Une peau saine,<br>une <em>expérience</em> qui vous ressemble.</h2>
+          <p class="about__text">L.A Beauty est un institut de beauté situé à Cotonou, entièrement dédié aux soins du visage. Notre approche part d’un principe simple : chaque peau a son histoire, ses besoins et son rythme.</p>
+          <p class="about__text">Après un échange attentif, nous composons un soin sur mesure pour traiter l’hyperpigmentation, apaiser l’acné et révéler l’éclat naturel de votre teint, dans une atmosphère calme pensée pour vous faire du bien.</p>
+
+          <ul class="values">
+            <li><span class="values__num">01</span><h3>Écoute</h3><p>Un échange sincère pour comprendre votre peau et vos attentes.</p></li>
+            <li><span class="values__num">02</span><h3>Douceur</h3><p>Des gestes précis et des produits choisis avec soin.</p></li>
+            <li><span class="values__num">03</span><h3>Résultats</h3><p>Un accompagnement dans la durée pour des améliorations visibles.</p></li>
+          </ul>
+
+          <div class="about__cta">
+            <a href="#contact" class="btn btn--dark">
+              Prendre rendez-vous
+              <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#galerie" class="link-underline">Voir la galerie</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALERIE ============ -->
+    <section class="galerie" id="galerie">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Galerie<span class="eyebrow__line"></span></p>
+          <h2 class="section-title">Un instant de <em>douceur</em>, des peaux qui rayonnent</h2>
+          <p class="section-lead">Un aperçu de notre univers : des soins, des gestes précis et une atmosphère apaisante.</p>
+        </header>
+
+        <div class="gallery" id="gallery">
+          <figure class="g-item g-1 reveal"><button class="g-btn" type="button" data-full="images/galerie-1.jpg" data-caption="Éclat naturel" aria-label="Agrandir la photo : Éclat naturel"><img src="images/galerie-1.jpg" alt="Visage lumineux, main posée sur la joue" loading="lazy"><span class="g-cap">Éclat naturel</span></button></figure>
+          <figure class="g-item g-2 reveal"><button class="g-btn" type="button" data-full="images/galerie-2.jpg" data-caption="Soin anti-imperfections" aria-label="Agrandir la photo : Soin anti-imperfections"><img src="images/galerie-2.jpg" alt="Soin anti-imperfections du visage" loading="lazy"><span class="g-cap">Soin anti-imperfections</span></button></figure>
+          <figure class="g-item g-3 reveal"><button class="g-btn" type="button" data-full="images/galerie-3.jpg" data-caption="L’univers de l’institut" aria-label="Agrandir la photo : L’univers de l’institut"><img src="images/galerie-3.jpg" alt="Détails de l’institut : bougie, produits et serviettes roulées" loading="lazy"><span class="g-cap">L’univers de l’institut</span></button></figure>
+          <figure class="g-item g-4 reveal"><button class="g-btn" type="button" data-full="images/galerie-4.jpg" data-caption="Éclat &amp; uniformité" aria-label="Agrandir la photo : Éclat et uniformité"><img src="images/galerie-4.jpg" alt="Soin éclat et uniformité du teint" loading="lazy"><span class="g-cap">Éclat &amp; uniformité</span></button></figure>
+          <figure class="g-item g-5 reveal"><button class="g-btn" type="button" data-full="images/galerie-5.jpg" data-caption="Un moment de détente" aria-label="Agrandir la photo : Un moment de détente"><img src="images/galerie-5.jpg" alt="Cliente détendue, serviette sur les cheveux" loading="lazy"><span class="g-cap">Un moment de détente</span></button></figure>
+          <figure class="g-item g-6 reveal"><button class="g-btn" type="button" data-full="images/galerie-6.jpg" data-caption="Rituel bien-être" aria-label="Agrandir la photo : Rituel bien-être"><img src="images/galerie-6.jpg" alt="Rituel bien-être pour le visage" loading="lazy"><span class="g-cap">Rituel bien-être</span></button></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow"><span class="eyebrow__line"></span>Contact<span class="eyebrow__line"></span></p>
+          <h2 class="section-title">Prenez <em>rendez-vous</em></h2>
+          <p class="section-lead">Dites-nous ce dont votre peau a besoin, nous vous répondons rapidement pour fixer le moment qui vous convient.</p>
+        </header>
+
+        <div class="contact__grid">
+          <div class="contact__info">
+            <div class="info-card reveal">
+              <span class="info-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+              <div><h3>Téléphone</h3><a href="tel:+2290150396530">+229 01 50 39 65 30</a></div>
+            </div>
+            <div class="info-card reveal">
+              <span class="info-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.200-7-11.500A7 7 0 0 1 19 9.500C19 14.800 12 21 12 21z"/><circle cx="12" cy="9.500" r="2.500"/></svg></span>
+              <div><h3>Adresse</h3><p>Cotonou, Bénin</p><a href="https://www.google.com/maps?q=6.3863622,2.4468197" target="_blank" rel="noopener">Voir l’itinéraire</a></div>
+            </div>
+            <div class="info-card reveal">
+              <span class="info-card__icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              <div class="info-card__hours">
+                <h3>Horaires</h3>
+                <table class="hours">
+                  <tr><td>Lundi</td><td>14h – 20h</td></tr>
+                  <tr><td>Mardi – Samedi</td><td>9h – 20h</td></tr>
+                  <tr><td>Dimanche</td><td>9h – 17h</td></tr>
+                </table>
+              </div>
+            </div>
+            <div class="contact__map reveal">
+              <iframe title="Localisation de L.A Beauty à Cotonou" src="https://www.google.com/maps?q=6.3863622,2.4468197&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+          <div class="form-card reveal">
+            <h3>Votre demande de rendez-vous</h3>
+            <p class="form-card__intro">Remplissez le formulaire, votre message s’ouvrira dans WhatsApp pour confirmation.</p>
+            <form class="form" id="rdv-form" novalidate>
+              <div class="field">
+                <label for="nom">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="+229 …" autocomplete="tel" required>
+              </div>
+              <div class="field">
+                <label for="soin">Soin souhaité</label>
+                <select id="soin" name="soin">
+                  <option>Soin anti-imperfections</option>
+                  <option>Éclat &amp; uniformité</option>
+                  <option>Rituel bien-être</option>
+                  <option>Je ne sais pas encore</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" name="date">
+              </div>
+              <div class="field field--full">
+                <label for="message">Message <span class="opt">(facultatif)</span></label>
+                <textarea id="message" name="message" placeholder="Parlez-nous de votre peau, de vos attentes…"></textarea>
+              </div>
+              <div class="form__submit">
+                <button type="submit" class="btn btn--dark">
+                  Envoyer ma demande
+                  <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M14 6l6 6-6 6"/></svg>
+                </button>
+                <span class="form__note">Réponse rapide, sans engagement.</span>
+              </div>
+              <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Galerie photo">
+    <button class="lightbox__btn lightbox__close" type="button" aria-label="Fermer"><svg class="icon" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    <button class="lightbox__btn lightbox__prev" type="button" aria-label="Photo précédente"><svg class="icon" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="lightbox__btn lightbox__next" type="button" aria-label="Photo suivante"><svg class="icon" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+    <figure class="lightbox__figure"><img src="" alt=""><figcaption></figcaption></figure>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <svg class="footer__wave" viewBox="0 0 1440 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 0H1440V26C1230 72 1010 4 760 30C520 54 250 70 0 22Z"/></svg>
+
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#accueil" class="logo logo--footer" aria-label="L.A Beauty — Retour à l’accueil">
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="50" cy="50" r="50" fill="#0e0e0e"/>
+            <g fill="none" stroke="#c99a3e" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M31 27 V57 H46"/><path d="M44 57 L58 27 L72 57"/><path d="M50 49 H66"/></g>
+            <text x="50" y="74" text-anchor="middle" font-family="Inter, sans-serif" font-size="6.6" letter-spacing="1.1" fill="#d9ab55">L.A BEAUTY</text>
+          </svg>
+        </a>
+        <p class="footer__tagline">Révélez l’éclat naturel<br>de votre <em>peau.</em></p>
+        <p class="footer__about">Institut de beauté à Cotonou, spécialisé dans les soins du visage.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram" class="socials__link"><svg class="icon" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.200" cy="6.800" r=".6"/></svg></a>
+          <a href="#" aria-label="Facebook" class="socials__link"><svg class="icon" viewBox="0 0 24 24"><path d="M14 8.500h2.500V5H14a3.500 3.500 0 0 0-3.500 3.500V11H8v3.500h2.500V21H14v-6.500h2.500L17 11h-3V8.700c0-.1.100-.2 0-.2z"/></svg></a>
+          <a href="https://wa.me/2290150396530" target="_blank" rel="noopener" aria-label="WhatsApp" class="socials__link"><svg class="icon" viewBox="0 0 24 24"><path d="M20 11.500a8.500 8.500 0 0 1-12.600 7.400L3.500 20l1.200-3.800A8.500 8.500 0 1 1 20 11.500z"/><path d="M9 8.500c0 3.500 3 6.500 6.500 6.500l1-1.500-2-1-1 .8a4.500 4.500 0 0 1-2-2l.8-1-1-2z"/></svg></a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Pied de page">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#soins">Nos soins</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h4>Nos soins</h4>
+        <ul>
+          <li><a href="#soins">Soin anti-imperfections</a></li>
+          <li><a href="#soins">Éclat &amp; uniformité</a></li>
+          <li><a href="#soins">Rituel bien-être</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Nous trouver</h4>
+        <ul class="footer__contact">
+          <li>Cotonou, Bénin</li>
+          <li><a href="tel:+2290150396530">+229 01 50 39 65 30</a></li>
+          <li>Mar – Sam · 9h – 20h<br>Dim · 9h – 17h · Lun · 14h – 20h</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline footer__btn">Prendre rendez-vous</a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> L.A Beauty · Tous droits réservés</p>
+      <p class="footer__values">Expertise <span>•</span> Douceur <span>•</span> Résultats</p>
+      <button type="button" class="to-top" id="to-top" aria-label="Retour en haut de page"><svg class="icon" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></svg></button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
